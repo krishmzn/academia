@@ -5,14 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     
-    font-family: 'quicksand';
-    line-height: 150%;
+    font-family: 'Poppins', sans-serif;    line-height: 150%;
 
     --button: #024286;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
