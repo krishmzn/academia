@@ -1,0 +1,37 @@
+.faq {
+    margin-bottom: 3rem;
+}
+
+.faq, .faq > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq > main {
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.faq > main > .left, .right {
+    max-width: 50%;
+}
+
+.faq > main > .left > img {
+    max-width: 45vw;
+}
+
+.faq > main > .right > select {
+    display: flex;
+    font-size: larger;
+    width: 45vw;
+    font-display: 1rem;
+}
+
+
+
+.faq > main > .right > p {
+    margin-bottom: 1rem;
+}
+

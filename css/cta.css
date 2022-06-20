@@ -1,0 +1,46 @@
+/* .cta, .cta > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta > main {
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+
+.cta {
+    margin-bottom: 3rem;
+}
+
+.cta, .cta > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta > main {
+    flex-direction: row;
+    padding: 2rem;
+    gap: 10rem;
+}
+
+.cta > main > .right, .left {
+    max-width: 50%;
+}
+
+.cta > main > .right > img {
+    max-width: 45vw;
+}
+
+.cta > main > .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left > .smedia {
+    font-size: 2rem;   
+}
