@@ -11,6 +11,10 @@
     --button: #024286;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     box-sizing: border-box;
@@ -162,8 +166,8 @@ a {
 }
 
 .p-container > .p-articles {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
 
     object-fit: cover;
 
@@ -176,8 +180,8 @@ a {
 }
 
 .p-articles > img {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
 
     object-fit: cover;
 
