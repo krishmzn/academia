@@ -4,64 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>IT Club Academia</title>
 </head>
 <body>
-
-    <section class="intro">
-        <div class="i-container">
-            <img src="assets/img/slider.jpg" alt="" width="50%" height="100%">
-            <article>
-                <h1>Welcome to Academia IT Club</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi soluta repellendus expedita, at laboriosam voluptatibus architecto nesciunt vel a facere sed ad odit ullam eum accusamus quis fugit quasi asperiores.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="slider" >
         <nav>
             <img src="assets/img/academia_logo.png" alt="">
             <ul>
-                <li>Home</li>
-                <li>Categories</li>
-                <li>Posts</li>
-                <li>Projects</li>
+                <li><i class="fas fa-home"></i><a href="/">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#signup">SignUp</a></li>
             </ul>
         </nav>
-        
-        <img src="assets/img/code.jpg" alt="" style="width: 100vw; height: 100vh;">
-        <div class="overlay"></div> <!-- for black overlay on the slider -->
-        
-        <section class="hero-content">
-            <!-- <h1>Introduction</h1> -->
-            <div class="h-container">
-                <div class="c1"><h3>Data Science</h3></div>
-                <div class="c2"><h3>web Dev</h3></div>
-                <div class="c3"><h3>Mobile Dev</h3></div>
-                <div class="c4"><h3>ML</h3></div>
-                <div class="c5"><h3>Stats</h3></div>
+
+        <div class="split">
+            <article class="front">
+                <h1>welcome TO IT Club Academia</h1>
+                <div class="h-container">
+                    <div class="c1"><i class="fa-brands fa-java"></i></div>
+                    <div class="c2"><i class="fa-brands fa-js"></i></div>
+                    <div class="c3"><i class="fa-brands fa-php"></i></div>
+                    <div class="c4"><i class="fa-brands fa-python"></i></div>
+                    <div class="c5"><i class="fa-brands fa-swift"></i></div>
+                    <div class="c6"><i class="fa-brands fa-r-project"></i></div>
+                    <div class="c7"><i class="fa-brands fa-rust"></i></div>
+                </div>
+            </article>
+        </div>
+
+        <section class="posts">
+            <div class="posts-c">
+                <h1>Our Recent activities</h1>
+                <div class="p-container">
+                    <article class="p-articles"><img src="assets/img/card/1.jpg" alt=""></article>
+                    <article class="p-articles"><img src="assets/img/card/2.jpg" alt=""></article>
+                    <article class="p-articles"><img src="assets/img/card/3.jpg" alt=""></article>
+                    <article class="p-articles"><img src="assets/img/card/4.jpg" alt=""></article>
+                    <article class="p-articles"><img src="assets/img/card/5.jpg" alt=""></article>
+                    <article class="p-articles"><img src="assets/img/card/6.jpg" alt=""></article>
+                    <article class="p-articles"><img src="assets/img/card/7.jpg" alt=""></article>
+                    <article class="p-articles"><img src="assets/img/card/8.jpg" alt=""></article>
+                </div>
             </div>
         </section>
-        <!-- <h1 class="sheader">Welcome to IT club</h1>
-        
-        <p class="scontent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo cumque quo exercitationem autem molestiae aspernatur earum omnis culpa placeat quam, id iure perspiciatis tempore. Cupiditate repellendus ipsa vero alias est, doloribus aliquid voluptate, corporis dolor atque eius ad recusandae? Amet voluptatum est officia odio cum reiciendis nisi dicta soluta fugiat.</p> -->
-    </section>
 
-    <section class="posts">
-        <h1>Recent Posts</h1>
-        <div class="p-container">
-            <article class="p-articles"></article>
-            <article class="p-articles"></article>
-            <article class="p-articles"></article>
-            <article class="p-articles"></article>
-            <article class="p-articles"></article>
-            <article class="p-articles"></article>
-            <article class="p-articles"></article>
-            <article class="p-articles"></article>
+        <section class="form" id="signup"><!-- css in signup.css-->
+            <form action="">
+                <h1>signup/ Register</h1>
+                <input type="text" name="" id="fname" placeholder="First Name">
+                <input type="text" name="" id="mname" placeholder="Middle Name">
+                <input type="text" name="" id="lname" placeholder="Last Name">
+                <!-- <div id="dob">
+                    <p>Select Your Date Of Birth</p>
+                    <input type="date" name="" placeholder="Date Of Birth">
+                </div> -->
+                <div id="gender">
+                    <p>Select Your Gender</p>
+                    <select name="gender">
+                        <option value="none" selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
 
-        </div>
-    </section>
+                <input type="password" name="New Password" placeholder="New Password" id="">
+                <input type="password" name="Confirm Password" placeholder="Confirm Passowrd" id="">
+                <button>SignUp Now</button>            
+            </form>
+        </section>
+
+        <section class="iabout" id="aboutus">
+            <main class="iabout-c">
+                <h1>ABOUT</h1>
+                <div class="para">
+                    <P>Academia International College is one of the premier institutions dedicated to providing quality education in a fully-integrated, multicultural environment. The college occupies spacious area at Lalitpur with excellent facilities. In our Graduate School, we are one of the pioneer institutes in Nepal to introduce B.Sc.CSIT program offered by Tribhuvan University. Academia International College is committed to achieving excellence in the academic development of students and professionals. We strongly believe that the Academic Programs at Academia is going to acquire a distinguished reputation of being the most rigorous and fulfilling course in the category.</P>
+                    <p>Our education system must evolve to keep pace with mighty changes occurring today in business, industry, and society. Students must develop attributes and knowledge beyound traditional constraints of the classroom. Education System must be designed to accommodate current trends and future needs. It must create more connections and stronger partnership with the global society in which we are embedded. Our goal is to articulate the role of education in the early part of the 21st century and to establish design specifications that will enable our students to be a leader in shaping the future of the world. As such we have an obligation to address the full range of higher eduction, namely: teaching and learning, research, and service to the community. Indeed these three elements must be totally integrated if we are able to be effective in the pursuit of our mission.</p>
+                </div>
+                <button><a href="/about.html">Learn More</a></button>
+            </main>
+        </section>
 
     <footer>
             <article class="about">
