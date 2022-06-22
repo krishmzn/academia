@@ -39,7 +39,6 @@ form > * {
 
 form > input {
     height: 2.5rem;
-    width: 70%;
     background-color: rgba(256,256,256,.8);
     border-radius: 1%;
 }
@@ -99,6 +98,13 @@ form > h1 {
 }
 
 .form > form > * {
-    width: 50%;
+    width: 70%;
     height: 3rem;
+}
+
+
+@media(max-width: 900px) {
+    .form > form {
+        width: 100%;
+    }
 }

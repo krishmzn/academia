@@ -10,6 +10,11 @@
     --button: #024286;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     width: 100%;
     box-sizing: border-box;
@@ -160,12 +165,6 @@ a {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 3.5rem;
-}
-
-.back > img {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
 }
 
 /* posts */
@@ -329,6 +328,64 @@ a {
     cursor: pointer;
 }
 
+@media(max-width: 1000px) {
+    .h-container {
+        display: grid;
+        grid-template-columns: repeat(9, 4rem);
+        grid-template-rows: 2rem 1fr 2rem 2rem 1fr 2rem 2rem;
+    }
+
+    .c5 {
+        grid-column: 2/4;
+        grid-row: 3/6; 
+    }
+     
+    .c6 {
+        grid-column: 4/6;
+        grid-row: 4/7; 
+    }
+
+    .c7 {
+       grid-column: 6/8;
+       grid-row: 3/6; 
+    }
+}
+
+@media(max-width: 600px) {
+
+    .split > .front {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .h-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem;
+    }
+
+    .h-container > *{
+        grid-column: 1/2;
+    }
+
+    .c1 {
+        grid-row: 1/3; 
+    }
+     
+    .c2 {
+        grid-row: 3/5; 
+    }
+
+    .c3 {
+       grid-row: 5/7; 
+    }
+ */
+}
 /* footer */
 
 footer {
@@ -396,35 +453,9 @@ footer > article {
     color: black;
 }
 
-@media (max-width: 600px) {
-    .slider > img {
-        grid-column: 1/6;
-        grid-row: 1/6;    
-    }
-
+@media(max-width:600px) {
     footer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 3fr 1fr 1fr .3fr;
-    }
-
-    footer > article {
-        grid-column: 1/3;
-    }
-
-    footer > .about {
-        grid-row: 1/2;
-    }
-
-    footer > .categories {
-        grid-row: 2/3;
-    }
-
-    footer > .recent {
-        grid-row: 3/4;
-    }
-
-    footer > .c-bottom {
-        grid-row: 4/5;
+     display: flex;
+     flex-direction: column;
     }
 }

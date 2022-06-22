@@ -32,3 +32,16 @@
 .faq > main > .right > p {
     margin-bottom: 1rem;
 }
+
+@media (max-width:700px) {
+    .faq > main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .faq > main > .right > * {
+        text-align: center;
+        width: 100%;
+    }
+}

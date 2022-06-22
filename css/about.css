@@ -104,3 +104,9 @@
     box-shadow: 0px 8px 15px rgba(256, 256, 256, 0.2);
     cursor: pointer;
 }
+
+@media (max-width:700px) {
+    .iabout-c > * {
+        text-align: center;
+    }
+}
