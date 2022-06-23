@@ -58,9 +58,10 @@
   .topnav > :last-child > i {
     background-color: rgba(256,256,256, .85) !important;
     color: black;
+    margin-top: auto;
   }
   
-  @media (max-width:768px) {
+@media (max-width:768px) {
     .split > .front {
       padding-top: 8rem;
     }
