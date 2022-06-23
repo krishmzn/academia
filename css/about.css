@@ -105,8 +105,8 @@
     cursor: pointer;
 }
 
-@media (max-width:700px) {
-    .iabout-c > * {
-        text-align: center;
+@media (max-width:900px) {
+    .iabout-c {
+        width: 100%;
     }
 }
