@@ -10,12 +10,18 @@
 
 .faq > main {
     flex-direction: row;
+    max-width: 100%;
     padding: 2rem;
     gap: 2rem;
 }
 
 .faq > main > .left, .right {
     max-width: 50%;
+}
+
+.faq > main > .left {
+    display: flex;
+    flex-direction: column;
 }
 
 .faq > main > .left > img {
@@ -34,14 +40,19 @@
 }
 
 @media (max-width:700px) {
-    .faq > main {
+    .faq, .faq > main {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        width: 100%;
+    }    
+
+    .faq > main > .right {
+        text-align: justify;
+        min-width: 100%;
     }
 
-    .faq > main > .right > * {
-        text-align: center;
+    .faq > main > .right > select {
         width: 100%;
     }
 }

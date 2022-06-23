@@ -22,12 +22,13 @@
 
 .cta > main {
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 2rem;
     gap: 10rem;
 }
 
 .cta > main > .right, .left {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .cta > main > .right > img {
@@ -39,22 +40,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .left > .smedia {
-    font-size: 2rem;   
-}
-
-@media (max-width:700px) {
-    .cta > main {
-        display: flex;
-        flex-direction: column;
-        padding: none;
-        gap: 3rem;
-        width: 100%;
-    }
-
-    .cta > main > .left {
-        text-align: center;
-    }
+    font-size: 2rem;
 }

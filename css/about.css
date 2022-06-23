@@ -109,4 +109,8 @@
     .iabout-c {
         width: 100%;
     }
+
+    .iabout-c > .para > * {
+        text-align: justify !important;
+    }
 }
