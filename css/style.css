@@ -25,90 +25,6 @@ i {
     margin-right: 0.3rem;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    height: 9vh;
-    justify-content: space-around;
-
-    z-index: 2;
-    
-    background-color: rgba(256,256,256, .85);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
-
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-nav > ul {
-    text-decoration: none;
-    list-style-type: none;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-    cursor: pointer;
-}
-
-ul {
-    text-decoration: none;
-    list-style-type: none;
-    
-    display: flex;
-    flex-direction: row;
-
-    cursor: pointer;
-}
-
-
-nav > ul > li {
-    padding: 3.3vh .7rem;
-
-    font-weight: bold;
-}
-
-nav > ul > li:hover {
-    background-color: #024286;
-    color: white;
-    cursor: pointer;
-}
-
-nav > ul > li:first-child {
-    color: white;
-    background-color: #024286;
-} 
-
-@media(max-width:768px) {
-    .topnav {
-        display: block !important;
-    }
-
-    nav {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: white;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    nav > ul > li {
-        margin: 16px 0;
-    }
-
-    nav > ul > li.active {
-        left: 0;
-    }
-}
-
-/* nav */
-
 a {
     text-decoration: none;
     color: inherit;
@@ -333,6 +249,7 @@ a {
 
     .split > .front {
         padding: 3rem 0;
+        padding-top: 7rem;
     }
 
     .split > .front > h1 {
