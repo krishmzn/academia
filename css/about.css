@@ -108,9 +108,14 @@
 @media (max-width:900px) {
     .iabout-c {
         width: 100%;
+        padding: 2rem;
     }
 
     .iabout-c > .para > * {
         text-align: justify !important;
+    }
+
+    .iabout-c > .para {
+        min-width: 100% !important;
     }
 }

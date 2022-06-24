@@ -46,3 +46,9 @@
 .left > .smedia {
     font-size: 2rem;
 }
+
+@media (max-width:900px) {
+    .cta > main {
+        gap: 1rem;
+    }
+}

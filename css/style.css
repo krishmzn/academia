@@ -334,6 +334,10 @@ a {
     .split > .front {
         padding: 3rem 0;
     }
+
+    .split > .front > h1 {
+        font-size: 2.5rem;
+    }
     
     .h-container {
         display: grid;
