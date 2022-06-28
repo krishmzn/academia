@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     
-    font-family: 'Poppins', sans-serif;    line-height: 150%;
+    font-family: 'Poppins', sans-serif;    
+    line-height: 150%;
 
     --button: #024286;
 }
@@ -21,7 +22,7 @@ html, body {
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -163,7 +164,7 @@ header {
 /* Split */
 .split {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -271,6 +272,7 @@ header {
 
 .posts-c > h1 {
     text-transform: uppercase;
+    text-align: center;
 }
 
 .p-container {
