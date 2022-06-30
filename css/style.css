@@ -525,7 +525,7 @@ header {
     justify-content: space-around;
     align-items: center;
     
-    background-image: url(/assets/img/signup-bg.jpg);
+    background-image: url(https://raw.githubusercontent.com/krishmzn/academia/master/assets/img/signup-bg.jpg);
     
     
     min-height: 21rem;
