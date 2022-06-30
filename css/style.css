@@ -616,7 +616,7 @@ form > input::placeholder {
 
 @media(max-width:600px) {
     .signup > main {
-        height: 25rem;
+        height: 30rem;
     }
 
     .signup > main {
@@ -747,7 +747,7 @@ form > input::placeholder {
 
 .faq > main {
     flex-direction: row;
-    max-width: 100%;
+    max-width: 90%;
     padding: 2rem;
     gap: 2rem;
 }
