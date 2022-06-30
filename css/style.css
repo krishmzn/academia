@@ -195,7 +195,7 @@ header {
 .front > p {
     color: white;
     font-size: larger;
-    margin-bottom: 2rem;
+    margin-bottom: 3vh;
 }
 
 .search {
@@ -206,7 +206,7 @@ header {
     display: flex;
     font-display: row;
 
-    margin-top: 2rem;
+    margin-top: 3vh;
 }
 
 .searchf > * {
