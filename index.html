@@ -32,7 +32,7 @@
     </header>
 
         <section class="split">
-            <article class="front">
+            <article class="front fin">
                 <h1>welcome TO IT Club Academia</h1>
                 <p>Explore Projects on</p>
                 <div class="h-container">
@@ -189,6 +189,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <!-- Fade in animation -->
     <script type="text/javascript">
         window.addEventListener('scroll', reveal);
 
@@ -207,6 +208,16 @@
                 else{
                     reveals[i].classList.remove('active');
                 }
+            }
+        }
+
+        window.addEventListener('load', fin);
+
+        function fin(){
+            var fins = document.querySelectorAll('.fin');
+            
+            for(var i = 0; i < fins.length; i++){
+                fins[i].classList.add('active')
             }
         }
 
