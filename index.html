@@ -54,7 +54,7 @@
         </section>
 
         <section class="about" id="aboutus">
-            <main>
+            <main class="reveal">
                 <div class="left">
                     <img src="assets/img/chief.jpg" alt="">
                 </div>
@@ -65,9 +65,23 @@
                 </div>
             </main>
         </section>
+
+        <!-- <section class="carousel">
+            <main class="container reveal">
+                <div class="content">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="assets/img/card/6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section> -->
         
         <section class="posts">
-            <div class="posts-c">
+            <main class="posts-c reveal">
                 <h1>Our Recent activities</h1>
                 <div class="p-container">
                     <article class="p-articles"><img src="assets/img/card/6.jpg" alt=""></article>
@@ -79,11 +93,11 @@
                     <!-- <article class="p-articles"><img src="assets/img/card/7.jpg" alt=""></article>
                     <article class="p-articles"><img src="assets/img/card/8.jpg" alt=""></article> -->
                 </div>
-            </div>
+            </main>
         </section>
 
         <section class="signup" id="signup">
-            <main>
+            <main class="reveal">
                 <div class="left">
                     <div class="text">
                         <p>join the community now</p>
@@ -106,7 +120,7 @@
         </section>
 
         <section class="faq">
-            <main>
+            <main class="reveal">
                 <div class="left">
                     <img src="assets/img/card/13.png" alt="">
                 </div>
@@ -127,7 +141,7 @@
         </section>
 
         <section class="cta">
-            <main>
+            <main class="reveal">
                 <div class="left">
                     <h1>Connect With Us</h1>
                     <p>On Various Social Media Platform</p>
@@ -175,5 +189,27 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+                
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+    </script>
 </body>
 </html>

@@ -270,6 +270,20 @@ background-position: -2.8000000000000003px -2.8000000000000003px, -2.80000000000
     }
 }
 
+/* carousel */
+.carousel .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    
+}
+
+.carousel .card .image img {
+    border-radius: 50%;
+}
+/* carousel */
+
+
 /* posts */
 .posts {
     display: flex;
@@ -940,3 +954,15 @@ footer > article {
 }
 }
 /* Footer */
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
