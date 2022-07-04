@@ -66,21 +66,70 @@
             </main>
         </section>
 
-        <!-- <section class="carousel">
-            <main class="container reveal">
-                <div class="content">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="assets/img/card/6.jpg" alt="">
-                            </div>
-                        </div>
+        <section class="carousel">
+            <main class="reveal">
+                <article class="carousel-h">
+                    <h1>Top  Active Projects</h1>
+                    <p>
+                        <span class="sb" >&#139;</span>
+                        <span class="sb" >&#155;</span>
+                    </p>
+                </article>
+                <article class="carousel-c">
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/6.jpg" alt="">
+                        </picture>
                     </div>
-                </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/robot.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/6.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/robot.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/6.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/robot.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/6.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/robot.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/6.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="project">
+                        <picture>
+                            <img src="assets/img/card/robot.jpg" alt="">
+                        </picture>
+                    </div>
+                </article>
             </main>
-        </section> -->
-        
-        <section class="posts">
+        </section>
+        <!-- <section class="posts">
             <main class="posts-c reveal">
                 <h1>Our Recent activities</h1>
                 <div class="p-container">
@@ -90,11 +139,9 @@
                     <article class="p-articles"><img src="assets/img/card/robot.jpg" alt=""></article>
                     <article class="p-articles"><img src="assets/img/card/6.jpg" alt=""></article>
                     <article class="p-articles"><img src="assets/img/card/robot.jpg" alt=""></article>
-                    <!-- <article class="p-articles"><img src="assets/img/card/7.jpg" alt=""></article>
-                    <article class="p-articles"><img src="assets/img/card/8.jpg" alt=""></article> -->
                 </div>
             </main>
-        </section>
+        </section> -->
 
         <section class="signup" id="signup">
             <main class="reveal">
@@ -126,16 +173,17 @@
                 </div>
                 <div class="right">
                     <select name="faq">
-                        <option value="none" selected>How can I join the club?</option>
-                        <option value="none" >why should i get involved?</option>
+                        <option value="none" class="q1" selected>How can I join the club?</option>
+                        <option value="none" class="q2">why should i get involved?</option>
                     </select>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur neque doloremque, eaque consectetur eligendi molestiae provident rerum ipsa doloribus inventore, nihil dolore autem illo temporibus sapiente! Quaerat, accusantium consequatur.</P>
+                    <P class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur neque doloremque, eaque consectetur eligendi molestiae provident rerum ipsa doloribus inventore, nihil dolore autem illo temporibus sapiente! Quaerat, accusantium consequatur.</P>
+                    <!-- <P class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur neque doloremque, eaque consectetur eligendi molestiae provident rerum ipsa doloribus inventore, nihil dolore autem illo temporibus sapiente! Quaerat, accusantium consequatur.</P> -->
                     <select name="faq">
-                        <option value="none" selected>why should i get involved?</option>
-                        <option value="none" >How can I join the club?</option>
-                        
+                        <option value="none" class="q3" selected>why should i get involved?</option>
+                        <option value="none" class="q4">How can I join the club?</option>
                     </select>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur neque doloremque, eaque consectetur eligendi molestiae provident rerum ipsa doloribus inventore, nihil dolore autem illo temporibus sapiente! Quaerat, accusantium consequatur.</P>
+                    <P class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur neque doloremque, eaque consectetur eligendi molestiae provident rerum ipsa doloribus inventore, nihil dolore autem illo temporibus sapiente! Quaerat, accusantium consequatur.</P>
+                    <!-- <P class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur neque doloremque, eaque consectetur eligendi molestiae provident rerum ipsa doloribus inventore, nihil dolore autem illo temporibus sapiente! Quaerat, accusantium consequatur.</P> -->
                 </div>
             </main>
         </section>
@@ -189,8 +237,8 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <!-- Fade in animation -->
     <script type="text/javascript">
+        // Fade in animation
         window.addEventListener('scroll', reveal);
 
         function reveal(){
@@ -221,6 +269,26 @@
             }
         }
 
+        // Nav on scroll (not working yet!)
+        // window.addEventListener('scroll', hideNav);
+        // function hideNav(){
+        //     var snav = document.querySelectorAll('header');
+        //     var lastScrollTop = 0;
+
+        //     window.addEventListener("scroll", function(){
+        //         var st = window.pageYOffset || document.documentElement.scrollTop;
+
+        //         if (st > lastScrollTop){
+        //                 snav.forEach(() => {
+        //                     snav.style.display="none";
+        //                 })
+        //             } else{
+        //                 snav.forEach(() => {
+        //                     snav.style.display="block";
+        //                 })
+        //         }
+        //     })
+        // }
     </script>
 </body>
 </html>
