@@ -5,7 +5,6 @@ hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
 })
-
 // To close hamburger
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
 	hamburger.classList.remove("active");
@@ -13,7 +12,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
-// Card Carousel
+// CARD CAROUSEL
 let span = document.getElementsByClassName('sb');
 let project = document.getElementsByClassName('project')
 let project_page = Math.ceil(project.length / 4);
@@ -48,29 +47,10 @@ span[1].onclick = () => { right_mover(); }
 span[0].onclick = () => { left_mover(); }
 
 // FAQ
+faqUpdate()
+function faqUpdate(){
+	var select = document.getElementsByClassName('sfaq');
+	var option = select.options[select.selectedIndex];
 
-	let q1 = getElementsByClassName('q1');
-	let q2 = getElementsByClassName('q2');
-	let q3 = getElementsByClassName('q3');
-	let q4 = getElementsByClassName('q4');
-
-	let p1 = getElementsByClassName('p1');
-	let p2 = getElementsByClassName('p2');
-	let p3 = getElementsByClassName('p3');
-	let p4 = getElementsByClassName('p4');
-
-	q1.addEventListener(click, ()=>{
-		p1.style.display = "block"
-	});
-
-	q2.addEventListener(click, ()=>{
-		p2.style.display = "block"
-	});
-
-	q3.addEventListener(click, ()=>{
-		p1.style.display = "block"
-	});
-
-	q4.addEventListener(click, ()=>{
-		p1.style.display = "block"
-	});
+	document.getElementsByClassName('showfaq').value = option.value;
+}
