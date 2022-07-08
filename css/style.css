@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 
+:root {
+    --l-color: #486bb4;
+    --primary: #004184;
+    --d-color: #001c57;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -39,10 +45,12 @@ i:hover {
 a {
     text-decoration: none;
     color: inherit;
+    padding: 0;
+    margin: 0;
 }
 
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 
 @media (max-width:468px) {
@@ -52,13 +60,17 @@ section {
 }
 
 /* nav */
-header {
+.nav {
     position: fixed;
     z-index: 2;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hidenav {
+    opacity: 0;
 }
 
 .navbar>ul>li {
@@ -190,10 +202,10 @@ header {
     align-items: center;
     justify-content: center;
 
-    background-color: #28282e;
-    background-image: linear-gradient(#353535 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(90deg, #353535 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(#353535 1.4000000000000001px, transparent 1.4000000000000001px), linear-gradient(90deg, #353535 1.4000000000000001px, #28282e 1.4000000000000001px);
-    background-size: 70px 70px, 70px 70px, 14px 14px, 14px 14px;
-    background-position: -2.8000000000000003px -2.8000000000000003px, -2.8000000000000003px -2.8000000000000003px, -1.4000000000000001px -1.4000000000000001px, -1.4000000000000001px -1.4000000000000001px;
+    background-color: #fff;
+    opacity: 0.8;
+    background-image: radial-gradient(rgba(255, 255, 255, 1) 0.5px, rgba(72, 107, 180, .75) 0.5px);
+    background-size: 10px 10px;
 }
 
 .front>h1 {
@@ -280,6 +292,143 @@ header {
     }
 }
 
+/* .m-count */
+.mcount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mcount > .mcount-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 90%;
+    text-align: center;
+}
+
+.mcount > .mcount-c > article > .up > a > i {
+    font-size: 5rem;
+    color: var(--l-color);
+}
+
+.mcount > .mcount-c > article {
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mcount > .mcount-c > article> .down > h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 3rem;
+}
+
+.mcount > .mcount-c > article > * > * {
+    color: #555;
+    text-align: center;
+}
+/* .m-count */
+
+/* benefits */
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.benefits > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgba(72, 107, 180, .75);
+    padding: 3rem;
+    border-radius: 1rem;
+    gap: 3rem;
+}
+
+.benefits > main > .up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+}
+
+.benefits > main > .up > * {
+    color: white;
+    text-align: justify;
+}
+
+.benefits > main > .up > h1 {
+    font-size: 1.7rem;
+}
+
+.benefits > main > .up > p {
+    opacity: .95;
+}
+
+.benefits > main > .down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+}
+
+.benefits > main > .down > .bcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    min-width: 18rem;
+    max-width: 30%;
+    height: 20rem;
+    min-height: fit-content;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: justify;
+}
+
+.benefits > main > .down > .bcard > .bcard-content > h2 {
+    text-align: center;
+}
+
+.benefits > main > .down > .bcard > i {
+    width: 5rem;
+    height: auto;
+    font-size: 5rem;
+    color: var(--l-color);
+}
+
+@media (max-width:568px) {
+    .benefits > main > .up {
+        width: 100%;
+    }
+
+    .benefits > main > .down > .bcard {
+        min-width: 18rem;
+    }
+
+    .benefits > main {
+        padding: 2rem 1rem;
+    }
+}
+/* benefits */
+
 /* carousel */
 .carousel {
     height: fit-content;
@@ -331,14 +480,9 @@ header {
     border-radius: 3px;
 }
 
-.carousel-h p span:hover {
-    background: #222;
-    color: white;
-}
-
 .carousel-c {
     width: 100%;
-    height: fit-content;
+    height: calc(fit-content + 1rem);
 
     margin: auto;
     margin-top: 1.5rem;
@@ -357,7 +501,7 @@ header {
     min-width: 30.5%;
     height: 20rem;
     margin: 0 20px 0 0;
-    border-radius: 20px;
+    border-radius: 1rem;
     left: 0;
     transition: 0.5s;
     /* padding: 1rem; */
@@ -417,8 +561,6 @@ small {
         min-width: 100%;
     }
 }
-
-
 /* carousel */
 
 /* posts */
@@ -914,10 +1056,13 @@ form>input::placeholder {
 
 .faq>main>.left {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .faq>main>.left>img {
+    min-width: 20rem;
     max-width: 45vw;
 }
 
@@ -980,6 +1125,7 @@ form>input::placeholder {
 }
 
 .cta>main>.right>img {
+    min-width: 20rem;
     max-width: 45vw;
 }
 
@@ -1012,10 +1158,10 @@ footer {
     min-height: fit-content;
     width: 100%;
 
-    background-color: #28282e;
-    background-image: linear-gradient(#353535 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(90deg, #353535 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(#353535 1.4000000000000001px, transparent 1.4000000000000001px), linear-gradient(90deg, #353535 1.4000000000000001px, #28282e 1.4000000000000001px);
-    background-size: 70px 70px, 70px 70px, 14px 14px, 14px 14px;
-    background-position: -2.8000000000000003px -2.8000000000000003px, -2.8000000000000003px -2.8000000000000003px, -1.4000000000000001px -1.4000000000000001px, -1.4000000000000001px -1.4000000000000001px;
+    background-color: #fff;
+    opacity: 0.8;
+    background-image: radial-gradient(#fff 0.5px, rgba(72, 107, 180, .75) 0.5px);
+    background-size: 10px 10px;
 }
 
 footer>* {
@@ -1039,7 +1185,7 @@ footer>article {
 }
 
 .fabout>p {
-    opacity: .8;
+    /* opacity: .8; */
     text-align: justify;
 }
 
@@ -1058,14 +1204,14 @@ footer>article {
 
 .categories>ul>li, .recent>ul>li {
     margin-bottom: .1rem;
-    opacity: .8;
+    /* opacity: .8; */
 }
 
 .c-bottom {
     grid-row: 3/4;
     grid-column: 1/4;
 
-    background-color: black;
+    background-color: var(--l-color);
     display: flex;
     align-items: center;
     justify-content: center;
