@@ -425,6 +425,7 @@ section {
 
     .benefits > main > .down > .bcard {
         min-width: 18rem;
+        padding: 1rem;
     }
 
     .benefits > main {
