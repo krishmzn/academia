@@ -32,6 +32,10 @@ body {
     box-sizing: border-box;
 
     -webkit-text-size-adjust: 100%;
+
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(72, 107, 180, .3) 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px;
 }
 
 i {
@@ -204,7 +208,7 @@ section {
 
     background-color: #fff;
     opacity: 0.8;
-    background-image: radial-gradient(rgba(255, 255, 255, 1) 0.5px, rgba(72, 107, 180, .75) 0.5px);
+    background-image: radial-gradient(rgba(72, 107, 180, .2) 0.5px, rgba(72, 107, 180, .75) 0.5px);
     background-size: 10px 10px;
 }
 
@@ -1160,7 +1164,7 @@ footer {
 
     background-color: #fff;
     opacity: 0.8;
-    background-image: radial-gradient(#fff 0.5px, rgba(72, 107, 180, .75) 0.5px);
+    background-image: radial-gradient(rgba(72, 107, 180, .2) 0.5px, rgba(72, 107, 180, .75) 0.5px);
     background-size: 10px 10px;
 }
 
