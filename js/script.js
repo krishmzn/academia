@@ -53,3 +53,10 @@ function faqUpdate(){
 
 	document.getElementsByClassName('showfaq').value = option.value;
 }
+
+// nav change
+var nbar = getElementsByClassName('navbar');
+window.addEventListener(scroll, ()=>{
+	console.log('scrolled')
+	// nbar.style.backgroundcolor = "rgba(256, 256, 256, 1);"
+})
