@@ -216,14 +216,14 @@ section {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 14rem;
     font-size: 3rem;
 }
 
 .front>p {
     color: white;
     font-size: larger;
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
 }
 
 .search {
@@ -234,7 +234,7 @@ section {
     display: flex;
     font-display: row;
 
-    margin-top: 3vh;
+    margin-top: 4vh;
 }
 
 .searchf>* {
@@ -1256,21 +1256,25 @@ footer>article {
 /* Fade in animation */
 .fin {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(50px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
 }
 
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(100px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
 }
 
-.reveal.active, .fin.active {
+.reveal.active {
     transform: translateY(0px);
     opacity: 1;
 }
 
+.fin.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
 /* Fade in animation */
