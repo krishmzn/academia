@@ -1282,21 +1282,3 @@ footer>article {
     opacity: 1;
 }
 /* Fade in animation */
-
-@media (max-width:500px) {
-    html {
-        font-size: 90%;
-    }
-}
-
-@media (min-width:1700px) {
-    html {
-        font-size: 110%;
-    }
-}
-
-@media (max-width:2000px) {
-    html {
-        font-size: 130%;
-    }
-}
