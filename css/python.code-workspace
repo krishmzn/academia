@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "web scraper",
+			"path": "../../../../py/web scraper"
+		},
+		{
+			"path": "../../../../data/scraper-macd-heroku"
+		},
+		{
+			"path": "../../../../data/scraper-macd-all"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web scraper"
+	}
+}
